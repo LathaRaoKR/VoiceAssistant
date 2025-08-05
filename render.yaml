@@ -2,6 +2,8 @@ services:
   - type: web
     name: voice-assistant
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
-    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: ELEVEN_API_KEY
+        value: sk_7994e99599b0e1a31286f4dc8e11bf7ef20987b434781443

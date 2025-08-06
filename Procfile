@@ -1,1 +1,1 @@
-web: gunicorn voice_assistant_gui:app 
+web: gunicorn app:app
